@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #0056f3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.logo span {
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+.logo small {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-enroll {
+    background-color: #6a0dad;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 40px auto;
+    flex: 1;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.profile-card {
+    background-color: #0056f3;
+    border-radius: 25px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.profile-main-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.avatar {
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatar i {
+    font-size: 80px;
+    color: #111;
+    margin-bottom: -5px;
+}
+
+.user-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.user-details ul {
+    list-style: none;
+}
+
+.user-details li {
+    font-size: 13px;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 12px;
+}
+
+.user-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.stat-box {
+    background-color: white;
+    color: black;
+    border-radius: 18px;
+    padding: 15px 20px;
+    min-width: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-box span {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    display: inline-block;
+    background-color: #ffaa00;
+    color: white;
+}
+
+.stat-box strong {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111;
+}
+
+.settings-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+
+.panel-section {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.header-purple { background-color: #6a0dad; }
+.header-blue { background-color: #0056f3; }
+
+.course-list, .help-box {
+    list-style: none;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.course-list li:last-child { margin-bottom: 0; }
+
+.dots {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.help-box {
+    position: relative;
+}
+
+.help-links {
+    list-style: none;
+}
+
+.help-links li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 12px;
+}
+
+.help-links li::before {
+    content: "•";
+    color: #0056f3;
+    position: absolute;
+    left: 0;
+}
+
+.help-links a {
+    color: #0056f3;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.help-icon {
+    align-self: flex-end;
+    font-size: 30px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #0056f3;
+    color: white;
+    padding: 40px 5%;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+    gap: 30px;
+}
+
+.footer-column {
+    font-style: normal;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-column a, .footer-column p {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column i {
+    margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .profile-stats {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .profile-main-info {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-stats {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .stat-box {
+        width: 100%;
+    }
+
+    .settings-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
